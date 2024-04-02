@@ -7,7 +7,7 @@ dates_box = re.compile(r'''(
             \/
             (\d{1,2}) #Months
             \/
-            (\d{1,4}) #Years
+            (\d{4}) #Years
             )''', re.VERBOSE)
 
 mo = dates_box.findall(str(pyperclip.paste()))
