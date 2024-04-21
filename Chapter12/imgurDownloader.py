@@ -1,6 +1,6 @@
 #! python3
 # imgurDownloader - Downloads all resulting images of your chosen category on Imgur
-import requests, os, bs4, urllib.request
+import requests, os, bs4
 url = 'https://imgur.com/search/score?q='
 input_text = input('What image you want?\n')
 res = requests.get(url + '+'.join(input_text.split(' ')))
